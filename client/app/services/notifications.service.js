@@ -9,7 +9,7 @@ angular.module('app')
         var eventName = Pubnub.getMessageEventNameFor(channelGroup);
         
         $rootScope.$on(eventName, function(ngEvent, message, env){
-            let channel = env[3];
+            var channel = env[3];
 
             // The user shouldn't receive his own messages
             if(message.sender.uuid.toString() === currentUser.get().id.toString()) return;
