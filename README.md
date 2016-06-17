@@ -84,7 +84,7 @@ Run `grunt build` for building the production app
 
 ### Running the server
 
-- Insert your PubNub keys, OAuth keys and server configuration in a `server/config.json` file. <br />
+- Insert your PubNub keys, OAuth keys and server configuration in a `server/.sample.env` file. <br />
 There is an example in the `server/.sample.env` or below is how this file looks like:
 
 ```
